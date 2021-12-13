@@ -1,6 +1,6 @@
 import socket
 
-host = "127.0.0.1"
+host = "192.168.1.111"
 port = 80
 
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
@@ -19,7 +19,7 @@ if conn:
         if ldata.decode("utf-8") == "exit":
             conn.close()
         else:
-            print(ldata.decode("uft-8"))
+            print(ldata.decode("utf-8"))
 
         
         data=input("message:")
